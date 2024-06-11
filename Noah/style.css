@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.vl{
+    border-left: 1px solid grey;
+    height: 100px;
+}
+.text{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Navbar section */
+.navbar-toggler-icon{
+    color: white;
+    border-color: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-brand{
+    background-color: black;
+}
+.navbar-brand h3{
+    color: white;
+}
+.navbar-nav{
+    margin-top: 20px;
+    background-color: black;
+    height: 45vh;
+    text-align: center;
+}
+.navbar-nav li:hover{
+    background-color: rgb(202,130,248);
+}
+.navbar-nav li{
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+
+/* About me section */
+.btn1{
+    border-radius: 0;
+}
+.btn1:hover{
+    background: rgb(202,130,248);
+    border: none;
+}
+
+
+/* My services section */
+#services{
+    padding-top: 100px;
+}
+.service-body li b{
+    color: rgb(187, 185, 185);
+    font-size: 13px;
+}
+
+.service-body ul{
+    padding-top: 30px;
+}
+
+.service-image img{
+    width: 100%;
+    min-height: 250px;
+}
+
+/* Projects section */
+.projects-body{
+    margin-top: 70px;
+}
+.card{
+    background: transparent;
+    margin-bottom: 30px;
+}
+.card-body a{
+    text-decoration: none;
+    color: rgb(202,130,248);
+}
+.card:hover{
+    background-color: white;
+    cursor: pointer;
+    border: white;
+    opacity: 0.7;
+}
+
+/* Footer section */
+#footer{
+    margin-top: 100px;
+}
+.btn2{
+    background-color: rgb(202,130,248);
+    color: white;
+    border-radius: 40px;
+    width: 100%;
+}
+.btn2:hover{
+    background-color: rgb(213, 184, 226);
+}
+#email{
+    border-radius: 40px;
+}
+#email:focus{
+    box-shadow: none;
+    border-color: grey;
+}
+.footer h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer p{
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+
+.footer h6{
+    font-size: 12px;
+    color: grey;
+}
+
+.footer h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+}
+
+
+/* Responsive design */
+@media screen and (max-width:576px) {
+    .text{
+        display: none;
+    }
+    .vl{
+        display: none;
+    }
+    #footer{
+        text-align: center;
+    }
+    #services{
+        padding-top: 0px;
+    }
+    .service-body{
+        text-align: center;
+    }
+    .service-body ul li{
+        list-style-type: none;
+    }
+    .service-title{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text{
+        display: none;
+    }
+    .vl{
+        display: none;
+    }
+    #services{
+        padding-top: 0;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .a2{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #services{
+        padding-top: 50px;
+    }
+}
